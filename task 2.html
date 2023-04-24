@@ -4,58 +4,57 @@
         <title>Задание 2</title>
         <style>
             @import url(style/align.css);
+            @import url(style/slider.css);
         </style>
         <link rel="stylesheet" type="text/css" href="style/slick/slick.css"/>
         <link rel="stylesheet" type="text/css" href="style/slick/slick-theme.css"/>
-        <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-        <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    </head>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>    </head>
     <body>
-        <h3>Слайдер</h6>
         <div class="center">
+            <h3>Слайдер</h6>
             <div class="Gallery">
                 <div>
-                    <img src="img/picture1.jfif" alt="Фотография №1"/>
+                    <img src="img/picture1.jfif" width="300" alt="Фотография №1"/>
                 </div>
                 <div>
-                    <img src="img/picture2.jfif" alt="Фотография №2"/>
+                    <img src="img/picture2.jfif" width="300" alt="Фотография №2"/>
                 </div>
                 <div>
-                    <img src="img/picture3.jfif" alt="Фотография №3"/>
+                    <img src="img/picture3.jfif" width="300" alt="Фотография №3"/>
                 </div>
                 <div>
-                    <img src="img/picture4.jfif" alt="Фотография №4"/>
+                    <img src="img/picture4.jfif" width="300" alt="Фотография №4"/>
                 </div>
                 <div>
-                    <img src="img/picture5.jfif" alt="Фотография №5"/>
+                    <img src="img/picture5.jfif" width="300" alt="Фотография №5"/>
                 </div>
                 <div>
-                    <img src="img/picture6.jfif" alt="Фотография №6"/>
+                    <img src="img/picture6.jfif" width="300" alt="Фотография №6"/>
                 </div>
                 <div>
-                    <img src="img/picture7.jfif" alt="Фотография №7"/>
+                    <img src="img/picture7.jfif" width="300" alt="Фотография №7"/>
                 </div>
                 <div>
-                    <img src="img/picture8.jfif" alt="Фотография №8"/>
+                    <img src="img/picture8.jfif" width="300" alt="Фотография №8"/>
                 </div>
                 <div>
-                    <img src="img/picture9.jfif" alt="Фотография №9"/>
-                </div>
-                <div>
-                <img src="img/picture10.jfif" alt="Фотография №10"/>
+                    <img src="img/picture9.jfif" width="300" alt="Фотография №9"/>
                 </div>
             </div>
-            
             
             <script type="text/javascript" src="style/slick/slick.min.js"></script>
             <script type="text/javascript">
                 $(document).ready(function(){
                     $('.Gallery').slick({
+                        arrows: true,
+                        prevArrow: '<button type="button" class="slick-prev">Previous</button>',
+                        nextArrow: '<button type="button" class="slick-next">Next</button>',
                         dots: true,
                         infinite: true,
-                        speed: 500,
-                        fade: true,
-                        cssEase: 'linear'
+                        speed: 300,
+                        slidesToShow: 1,
+                        centerMode: true,
+                        variableWidth: true
                     });
                 });
               </script>
